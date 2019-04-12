@@ -1,0 +1,295 @@
+/*
+
+Vert: #7ed56f
+Vert medium: #55c57a
+Dark vert: #28b485
+
+*/
+
+/* Copyright @TIJANI ABDELLATIF 
+Front web developer 
+
+*/ 
+
+/* normaliser le css */
+
+*
+{
+    
+}
+
+body {
+    
+   
+   
+     
+
+}
+
+/* le corps de la page */
+.header 
+{
+    background:
+    linear-gradient(128deg, rgba(126, 213, 111, 1), rgba(255,0,0,0) 70.71%),
+    linear-gradient(200deg, rgba(85, 197, 122, 1), rgba(0,255,0,0) 70.71%),
+    linear-gradient(400deg, rgba(40, 180, 133, 1), rgba(0,0,255,0) 70.71%),
+
+
+
+url(../img/hero.jpg);
+height: 600px;
+width: 1231px;
+-webkit-clip-path: polygon(0 1%, 99% 1%, 98% 79%, 1% 98%);
+clip-path: polygon(0 1%, 99% 1%, 98% 89%, 1% 98%);
+background-size: cover;  
+    
+
+}
+
+.logo
+{
+    
+
+}
+
+.logowhite
+{
+    position: relative;
+    width : 80px;
+    top: 40px;
+    left: 30px;
+    animation: movetobottom 3s;
+    
+    
+    
+}
+
+.main
+{
+
+
+
+   
+
+}
+.heading1{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+    
+}
+.heading11
+{
+    position: relative;
+    left : 350px;
+    top: 60px;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    letter-spacing: 17px;
+    font-size: 55px;
+    font-family: sans-serif;
+    font-weight: 100;
+    animation: movingtoright 2s;
+
+}
+
+.heading12
+{
+    position: relative;
+    left : 20px;
+    top: 80px;
+    color: rgb(255, 255, 255);
+    margin-left: 270px;
+    letter-spacing: 12px;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    animation: movetoleft 2s;
+    
+}
+   
+
+
+
+/* Animation */ 
+
+@keyframes movetobottom
+{
+    0%
+    {
+        top: 10px;
+        left: 40px;
+        opacity: 0;
+    }
+
+   /* 60%
+    {
+       transform: rotate(30deg) ;
+    }
+    */
+
+    80%
+    {
+        top: 40px;
+        left: 40px;
+        opacity: 0.9;
+    }
+
+    100%
+    {
+        top: 40px;
+    left: 30px;
+    opacity: 1;
+    }
+}
+
+@keyframes movingtoright
+{
+    0%
+    {
+        left : 250px;
+        opacity: 0;
+    
+        
+    }
+
+   /* 60%
+    {
+       
+    }
+    */
+
+    80%
+    {
+        left : 350px;
+        opacity: 0.9;
+    
+    }
+
+    100%
+    {
+        left : 350px;
+        opacity: 1;
+        
+      
+    }
+}
+
+
+
+@keyframes movetoleft
+{
+    0%
+    {
+      
+        left : 60px;
+        top: 90px;
+    }
+
+    80%
+    {
+        left : 20px;
+        top: 90px;
+    }
+
+    100%
+    {
+        left : 20px;
+        top: 80px;
+    }
+}
+
+@keyframes logo{
+    0%
+    {
+       
+   transform: translate(0px);
+       
+    }
+
+    80%
+    {
+      
+    transform: translateY(50px);
+    }
+
+    100%
+    {
+       
+transform: translateY(10px);
+    }
+}
+/* bouton */ 
+.btn:link,.btn:visited
+{
+   
+
+}
+
+.btn:hover{
+
+  
+
+}
+.btn:active
+{
+  
+   
+}
+
+.btn-white
+{
+   
+    position: relative;
+    left: 500px;
+    top: 120px;
+    text-decoration: none;
+    color : black;
+    background-color: white;
+    padding : 12px 35px;
+    border: 1px solid white;
+    border-radius: 20px;
+    font-family: sans-serif, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 11px;
+    color: #777;
+}
+
+/* animer le boutton behind the scene  */ 
+
+.btn::after /* l'element fils apres le bouton */
+{
+  
+
+}
+
+.btn-white::after /* l'element fils apres le bouton */{
+  /* 
+    mettez l'element en rouge pour voir la difference
+   background-color:red;
+   */
+  
+}
+
+.btn:hover::after
+{
+ 
+
+}
+.btn-animated 
+
+{
+    animation: movingtoright 3s; 
+    animation-delay: 1s;
+    animation-fill-mode: backwards;
+    
+}
+
+
+
+
+ 
+ 
